@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="RocketCake">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="genre_html.css?h=b17c783e">
+</head>
+<body>
+<div class="textstyle1">
+<div id="menu_b749fb5"><div  class="menuholder1"><a href="javascript:void(0);" tabindex="-1" aria-label="&#8801;" >
+	<div id="menuentry_65c7c3f5"  class="menustyle1 menu_b749fb5_mainMenuEntry mobileEntry">
+		<div class="menuentry_text1">
+  <span class="textstyle2">&#8801;</span>
+		</div>
+	</div>
+</a>
+<a href="index.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_1fce3f8f"  class="menustyle2 menu_b749fb5_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle3">Home</span>
+		</div>
+	</div>
+</a>
+<a href="javascript:void(0);" tabindex="-1" aria-label="Genre" >
+	<div id="menuentry_883c02f"  class="menustyle3 menu_b749fb5_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle3">Genre</span>
+		</div>
+	</div>
+</a>
+<a href="contact_us_.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_24f5362d"  class="menustyle4 menu_b749fb5_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle3">Contact Us</span>
+		</div>
+	</div>
+</a>
+
+	<script type="text/javascript" src="images/wsp_menu.js"></script>
+	<script type="text/javascript">
+		var js_menu_b749fb5= new wsp_menu('menu_b749fb5', 'menu_b749fb5', 10, null, true, {generateAriaLabels: true, setUsefulTabIndices: true, mobileMenuIsFullscreen: true, mobileMenuCloseButtonColor: '#0A0A0A', menuPaddingUsed: 10, mobileMenuAnimations: ['fadeMenus'], closeWhenMouseOut: false} );
+
+		js_menu_b749fb5.createMenuForItem('menuentry_65c7c3f5', ["  <span class=\"textstyle3\">Home</span> ", 'index.html', '',
+		                                   "  <span class=\"textstyle3\">Genre</span> ", 'javascript:void(0);', '',
+		                                   "  <span class=\"textstyle3\">Contact Us</span> ", 'contact_us_.html', '']
+		                                   , true);
+		js_menu_b749fb5.createMenuForItem('menuentry_1fce3f8f', []);
+		js_menu_b749fb5.createMenuForItem('menuentry_883c02f', []);
+		js_menu_b749fb5.createMenuForItem('menuentry_24f5362d', []);
+
+	</script>
+</div></div>  </div>
+<div class="textstyle4">
+<div id="container_10b96d19"><div id="container_10b96d19_padding" ><div class="textstyle5"><span class="textstyle6"> <br/></span><img src="images/4ba44b365b1274cc4e781f37f3ea349a.png" width="518" height="80" id="img_7330b34f" alt="" title="" /><span class="textstyle7"><br/></span><span class="textstyle7"><br/></span><div id="elem_1fd37729"  style="box-sizing: border-box; vertical-align: bottom; position:relative; display: inline-block; width:24%; height:10px; min-width:350px; background-color:#D0A6DA; border: 1px dashed #B60E63; " ><form action="genre.html" enctype="application/x-www-form-urlencoded" method="POST">  <div id="text_250929e8">
+    <div class="textstyle5">
+<span class="textstyle8"><br/></span><div id="searchResults"<div style="text-align:center; margin:20px;">
+
+<input 
+type="text"
+id="searchInput"
+placeholder="Search retro games..."
+style="width:60%; padding:10px; font-size:16px;"
+onkeyup="highlightSearch()">
+
+</div>
+
+<style>
+
+.highlight{
+background:#fff3a6;
+color:black;
+padding:2px;
+border-radius:3px;
+}
+
+</style>
+
+<script>
+
+function removeHighlights(){
+document.querySelectorAll(".highlight").forEach(function(el){
+el.outerHTML = el.innerText;
+});
+}
+
+function highlightSearch(){
+
+let search = document.getElementById("searchInput").value.toLowerCase();
+
+removeHighlights();
+
+if(search.length < 2) return;
+
+/* keyword groups */
+let keywords = {
+
+action:[
+"action","combat","fight","fighting","platform","platformer",
+"mario","mega man","contra","castlevania","ninja","run and gun"
+],
+
+adventure:[
+"adventure","exploration","story","puzzle","quest",
+"zelda","monkey island","myst","maniac mansion","kings quest"
+],
+
+arcade:[
+"arcade","coin op","high score","arcade cabinet",
+"pacman","space invaders","donkey kong","galaga","asteroids"
+],
+
+retro:[
+"retro","classic","old school","8bit","16bit",
+"pixel","pixel graphics","1980s","1990s","vintage"
+]
+
+};
+
+/* collect words to highlight */
+let words = [search];
+
+Object.values(keywords).forEach(group=>{
+if(group.includes(search)){
+words = group;
+}
+});
+
+let elements = document.querySelectorAll("p, h1, h2, h3, h4, li, span");
+
+elements.forEach(function(el){
+
+words.forEach(function(word){
+
+let regex = new RegExp("\\b("+word+")\\b","gi");
+
+el.innerHTML = el.innerHTML.replace(regex,
+'<span class="highlight">$1</span>');
+
+});
+
+});
+
+/* scroll to first highlight */
+let firstResult = document.querySelector(".highlight");
+
+if(firstResult){
+firstResult.scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+}
+
+}
+
+</script>><div id="searchResults_padding" ><div class="textstyle4">      <span class="textstyle8">The search result will be highlighted below.<br/><br/><br/>Search action games, adventure games, and classic games</span>
+</div>
+</div></div><span class="textstyle8"><br/><br/><br/><br/><br/><br/></span>      </div>
+    </div>
+</form>
+<?PHP
+error_reporting(E_ALL ^ E_WARNING ^ E_ERROR); // hide errors and warnings
+function stripTagsWithContent($str, $tagbegin, $tagend)
+{    while (($pos = stripos ($str, $tagbegin)) !== false) 
+	{
+            $part = substr ($str, $pos + strlen($tagbegin));
+            $str = substr ($str, 0, $pos);
+            if (($pos2 = stripos ($part, $tagend)) !== false) 
+                $str .= substr ($part, $pos2 + strlen($tagend));
+        }
+
+        return $str;
+}
+// returns string found or false					
+function getHTMLFileTitle($filename)				
+{													
+	$filecontent = file_get_contents($filename);	
+    if ($filecontent === false)					
+        return false;								
+    												
+    $bodybegin = strpos($filecontent, '<title');	
+    if ($bodybegin === false)						
+        return false;								
+    												
+    $bodybegin = strpos($filecontent, '>', $bodybegin);
+    if ($bodybegin === false)						
+        return false;								
+    $bodybegin += 1;    							
+    $bodyend = strpos($filecontent, '</title>');	
+    if ($bodyend === false)						
+        return false;								
+													
+	$titlecontent = substr($filecontent, $bodybegin, $bodyend-$bodybegin); 
+	$titlecontent = htmlspecialchars_decode($titlecontent);			
+	return $titlecontent;		
+}			
+// returns string fragment found or false
+function searchHTMLFile($filename, $tosearch)
+{
+    $filecontent = file_get_contents($filename);
+    if ($filecontent === false)
+        return false;
+    
+    $bodybegin = strpos($filecontent, '<body');
+    if ($bodybegin === false)
+        return false;
+    
+    $bodybegin = strpos($filecontent, '>', $bodybegin);
+    if ($bodybegin === false)
+        return false;
+    $bodybegin += 1;    
+    $bodyend = strpos($filecontent, '</body>');
+    if ($bodyend === false)
+        return false;
+    
+    $bodycontent = substr($filecontent, $bodybegin, $bodyend-$bodybegin);
+        
+    $contentstripped = $bodycontent;
+    $contentstripped = stripTagsWithContent($contentstripped, '<script', '</script>');
+    $contentstripped = strip_tags($contentstripped);
+    $contentstripped = html_entity_decode($contentstripped);
+                
+    $posfound = stripos($contentstripped, $tosearch);
+    if ($posfound === false)
+        return false;
+    
+    $fragmentSizeToReturn = 200;
+    $fragmentStartPos = max(0, $posfound - ($fragmentSizeToReturn / 2));
+        
+    $ret = substr($contentstripped, $fragmentStartPos, $posfound - $fragmentStartPos) .
+            '<b>' 
+            . substr($contentstripped, $posfound, strlen($tosearch)) 
+            . '</b>' 
+            . substr($contentstripped, $posfound + strlen($tosearch), $fragmentSizeToReturn - ($posfound - $fragmentStartPos))
+            . '...';
+        
+    // in case we truncated some utf sequences with substr, fix this here:		 
+    $ret = mb_convert_encoding($ret, 'UTF-8', 'UTF-8');						 
+        
+    return $ret;															 
+}
+
+$resulttext = '';
+
+class searchEntry
+{
+    public $name;
+    public $url;
+}
+
+$allPages = array();
+$searchquery = '';
+
+if (isset($_POST['query']))
+{
+    $searchquery = $_POST['query'];
+    $resulttext = 'Results for:  ' . htmlentities($searchquery) . '<br/><br/>';
+    
+    // build database
+
+   $x = new searchEntry();
+   $x->name = '';
+   $x->url = 'index.html';
+   array_push($allPages, $x);
+
+   $x = new searchEntry();
+   $x->name = '';
+   $x->url = 'genre.html';
+   array_push($allPages, $x);
+
+   $x = new searchEntry();
+   $x->name = '';
+   $x->url = 'contact_us_.html';
+   array_push($allPages, $x);
+
+// now search database
+   
+   $resultsFound = 0;
+   
+   foreach ($allPages as $pageEntry) 
+   {      
+      $found = false;
+      $fragmentToShow = '';
+      
+      if (!(stripos(html_entity_decode($pageEntry->name), $searchquery) === false))
+      {
+         $found = true;
+         $fragmentToShow = $pageEntry->name;
+      }
+      else            
+      {
+         $fragmentToShow = searchHTMLFile($pageEntry->url, $searchquery);
+         if ($fragmentToShow !== false)
+            $found = true;         
+      }
+      
+      if ($found)
+      {
+         // add as found
+         $uptodateTitle = getHTMLFileTitle($pageEntry->url);
+         if ($uptodateTitle !== false)
+             $pageEntry->name = $uptodateTitle;
+             
+         $ptitle = $pageEntry->name == '' ? $pageEntry->url : $pageEntry->name;
+         $resulttext .= '<a style="font-size: 130%;" href="' . $pageEntry->url . '">' . $ptitle . '</a><br/>' . $fragmentToShow . '<br/><br/>';
+         $resultsFound += 1;
+      }
+   }
+   
+   if ($resultsFound == 0)
+      $resulttext = '0 results found.';
+}
+
+// display result or nothing
+
+// jsonencode doesn't like invalid unicode characters, so fix them if they are there:	
+$resulttext_prep = mb_convert_encoding($resulttext, 'UTF-8', 'UTF-8');	
+
+$lnbr = "\n";
+$jsresult = json_encode($resulttext_prep, JSON_UNESCAPED_UNICODE);
+
+echo '<script type="text/javascript">' . $lnbr;
+echo 'var rootform = document.getElementById("elem_1fd37729");' .$lnbr;
+echo 'var resultelem = rootform.querySelectorAll(\'[id^="container_"]\');';
+echo ' ' . $lnbr;
+echo 'var textelem = resultelem[1];' . $lnbr;
+echo '// search inner element to replace to keep font as specified by user' . $lnbr;
+echo 'var testelem = textelem;' . $lnbr;
+echo 'while(testelem)' . $lnbr;
+echo '{' . $lnbr;
+echo '	if (testelem && testelem.nodeType == 1) ' . $lnbr;
+echo '	{' . $lnbr;
+echo '		textelem = testelem;' . $lnbr;
+echo '		testelem = testelem.firstChild;' . $lnbr;
+echo '	}' . $lnbr;
+echo '	else		' . $lnbr;
+echo '		testelem = testelem.nextSibling;' . $lnbr;
+echo '}' . $lnbr;
+echo 'if (!(\'innerHTML\' in textelem)) textelem = resultelem[1]; // in case found something invalid' . $lnbr;
+echo 'textelem.innerHTML = ' . $jsresult . ';' . $lnbr;
+echo 'var queryform = document.getElementsByName(\'query\');' . $lnbr;
+echo 'queryform[0].value = ' . json_encode($searchquery) . ';' . $lnbr;
+echo '</script>' . $lnbr;   
+    ?>
+</div><span class="textstyle7"><br/><br/></span></div>
+<div style="clear:both"></div></div></div><div id="container_42e1be39"><div id="container_42e1be39_padding" ><div class="textstyle4"><div id="container_8b63d45"><div id="container_8b63d45_padding" ><div class="textstyle4"><div id="container_478d810d"><div id="container_478d810d_padding" ><div class="textstyle4"><span class="textstyle8"><br/></span><div id="slide_73cb5bf">
+	<script type="text/javascript" src="images/wsp_slideshow.js"></script>
+	<script type="text/javascript">
+		var js_slide_73cb5bf= new wsp_slideshow('slide_73cb5bf',['images/doom_image.jpg', 'images/pac_man_image.jpg', 'images/super_mario_2.jpg', 'images/legend_of_zelda.jpg', 'images/donkey_kong.jpg', 'images/street_fighter_image.jpg', 'images/sonic_game_image.jpg', 'images/prince_of_persia.jpg'], 'fade', 2500, 250, 'width',
+				['', '', '', '', '', '', '', ''], 'center',
+		{buttonSize: 35, buttonFontSize: 14, buttonBackgroundColor: "rgba(58, 58, 58, 0.509804)" , buttonHoverBackgroundColor: "rgba(0, 0, 0, 0.627451)" , buttonColor: "#FFFFFF" , buttonHoverColor: "#FFFFFF" , buttonMargin: 10, buttonBorderRadius: 50, buttonCharacterLeft: "&#8592;" , buttonCharacterRight: "&#8594;" , buttonFontFamily: "Arial, Helvetica, sans-serif" } ,
+		{enablePageIndicator: true, pageIndicatorPadding: 10, pageIndicatorButtonWidth: 10, pageIndicatorButtonHeight: 10, pageIndicatorButtonPadding: 5, pageIndicatorButtonColor: "#4D4D4D" , pageIndicatorButtonActiveColor: "#FFFFFF" , pageIndicatorButtonBorderRadius: 5, pageIndicatorButtonBorderWidth: 0, pageIndicatorButtonBorderColor: "#2F2F2F" , pageIndicatorBackColor: "rgba(58, 58, 58, 0.392157)" , pageIndicatorBackBorderRadius: 30, pageIndicatorBackMargin: 7, altTexts: 
+				['Doom', 'Pac-Man', 'Super Mario', 'The Legend of Zelda', 'Donkey Kong', 'Street Fighter', 'Sonic the Hedgehog', '']} );
+	</script>
+</div></div>
+<div style="clear:both"></div></div></div><div id="container_13c9e25a"><div id="container_13c9e25a_padding" ><div class="textstyle4"></div>
+<div class="textstyle5">  <span class="textstyle9"><br/>Retro gaming takes us back to a time when video games were simple, challenging, and packed with personality and pixles. During the 1980s and early 1990s, games were built around limited technology, which led to bold pixel graphics, memorable sound effects, and gameplay that rewarded quick reactions and persistence. Whether played in arcades or at home, these games focused on fun, creativity, and replay value- proving that you didn&#8217;t need realistic visuals to create experiences people still love today!<br/><br/>To find out more about how video games evolved over time, including changes in art styles and technology, you can explore this topic further! This website </span>
+  <span class="textstyle10"><a href="https://www.rmcad.edu/blog/the-evolution-of-video-game-art/#" target="_blank">here</a></span>
+  <span class="textstyle9"> explains how video game visuals developed from simple pixel designs to more advanced graphics. Click the link if you want to learn more about the evolution of video game art and design.</span>
+</div>
+</div></div></div>
+<div style="clear:both"></div></div></div><div id="container_367bebf6"><div id="container_367bebf6_padding" ><div class="textstyle4"><div id="container_6a0088e0"><div id="container_6a0088e0_padding" ><div class="textstyle4"><div class="wsp_accordion" id="elem_2a64b3ae"  style="vertical-align: top; position:relative; display: inline-block; margin:1px 0px 1px 0px;width:100%; height:973px; background-color:#D7CAE4; background-color:#D7CAE4;  height: auto;" >
+<button class="wsp_accordionButton" id="elem_2a64b3ae_button" >
+Action games:
+<span class="wsp_accordionButtonIndicator" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size:30pt" ></span>
+</button><div class="wsp_accordionContent" id="elem_2a64b3ae_content" >
+<div class="wsp_accordionContentPadding" id="elem_2a64b3ae_contentPadding" >
+<div id="text_f13da55"><div id="text_f13da55_padding" ><div class="textstyle5"><div id="gallery_77910cbb">
+	<script type="text/javascript" src="images/wsp_gallery.js"></script>
+<div class="galleryimgcontainer" ><a href="javascript:wsp_gallery.openlayer('images/action_game.jpg',413,550,true, 'gallery_77910cbb');"><img src="images/rwb_1.jpg" id="gallery_77910cbb_img1" width="413" height="550" /> </a></div></div><span class="textstyle8"> <br/><br/><br/></span></div>
+<div class="textstyle4"><span class="textstyle11">Early action games were defined by simple pixel graphics created within tight technical limits. Characters and environments were designed with clear shapes and bold colours, making fast movement and combat easy to follow. Rather than aiming for realism, the visuals focused on responsiveness and impact, with smooth-feeling animations and small effects that emphasised hits, explosions, and damage. <br/><br/>These straightforward 2D worlds supported quick reactions and intense gameplay, shaping the classic look and feel of early action games.<br/><br/></span><span class="textstyle12">Super Mario Bros</span><span class="textstyle13">.</span><span class="textstyle14"> was known for its bright colours, simple block environments, and clear character design that made fast platforming easy to follow.</span><span class="textstyle11"><br/></span><span class="textstyle12">Contra </span><span class="textstyle11">was known for its detailed sprite animations and large explosion effects that made shooting action feel intense and dramatic.<br/></span><span class="textstyle12">Mega Man 2</span><span class="textstyle11"> </span><span class="textstyle14">was known for its colourful enemy designs and smooth character animations that made weapons and attacks visually clear.</span><span class="textstyle11"><br/></span><span class="textstyle12">Castlevania</span><span class="textstyle14"> was known for its darker colour palette and gothic environments, giving the game a unique atmosphere while keeping gameplay readable.</span><span class="textstyle11"><br/></span><span class="textstyle12">Ninja Gaiden</span><span class="textstyle14"> was known for its fast character movement and fluid animations that made combat feel smooth and responsive</span><span class="textstyle8"><br/></span><span class="textstyle8"><a href="https://retrolorean.com/en/genre/action" target="_blank"><br/>Find out more about Action games!</a></span><span class="textstyle8"><br/><br/><br/><br/><br/></span></div>
+<div style="clear:both"></div></div></div></div></div></div><script>
+var elem_2a64b3ae_button_open = function()
+{
+   this.classList.toggle("active");
+	
+   var contentElm = this.nextElementSibling;
+	
+  if (contentElm.style.maxHeight) 
+  {
+      contentElm.style.maxHeight = null;
+  }  
+  else 
+  {
+     contentElm.style.maxHeight = contentElm.scrollHeight + "px";
+	 	
+  }
+}
+var elm = document.getElementById("elem_2a64b3ae_button");
+elm.addEventListener("click", elem_2a64b3ae_button_open);</script>
+</div>
+<div style="clear:both"></div></div></div><div id="container_e35a6f1"><div id="container_e35a6f1_padding" ><div class="textstyle4"><div class="wsp_accordion" id="elem_2f04d44a"  style="vertical-align: top; position:relative; display: inline-block; margin:1px 0px 1px 0px;width:100%; height:971px; background-color:#D7CAE4; background-color:#D7CAE4;  height: auto;" >
+<button class="wsp_accordionButton" id="elem_2f04d44a_button" >
+Adventure games:
+<span class="wsp_accordionButtonIndicator" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size:30pt" ></span>
+</button><div class="wsp_accordionContent" id="elem_2f04d44a_content" >
+<div class="wsp_accordionContentPadding" id="elem_2f04d44a_contentPadding" >
+<div id="text_4bd8ccd3"><div id="text_4bd8ccd3_padding" ><div class="textstyle5"><div id="gallery_76dfdc81">
+	<script type="text/javascript" src="images/wsp_gallery.js"></script>
+<div class="galleryimgcontainer" ><a href="javascript:wsp_gallery.openlayer('images/action_game_image.jpg',736,736,true, 'gallery_76dfdc81');"><img src="images/rwb_2.jpg" id="gallery_76dfdc81_img1" width="736" height="736" /> </a></div></div></div>
+<div class="textstyle4"><span class="textstyle8"><br/><br/></span><span class="textstyle11">Early adventure games focused more on exploration and storytelling than fast action, which shaped how their visuals were designed. Graphics were often simple but expressive, using pixel art to suggest locations, characters, and objects rather than show them in detail. Environments were carefully laid out to encourage discovery, with visual cues guiding players through puzzles and narratives. <br/><br/>The slower pace allowed players to take in the artwork, making atmosphere and world-building more important than movement or effects.<br/></span><span class="textstyle12"><br/>The Legend of Zelda</span><span class="textstyle14"> was known for its large overworld map and distinct environmental landmarks that encouraged exploration and discovery.</span><span class="textstyle11"><br/></span><span class="textstyle12">Maniac Mansion</span><span class="textstyle14"> was known for its detailed rooms and interactive objects that helped players solve puzzles through exploration.</span><span class="textstyle11"><br/></span><span class="textstyle12">King's Quest </span><span class="textstyle14">was known for its colourful environments and early use of animated scenes that made the world feel more alive.</span><span class="textstyle11"><br/></span><span class="textstyle12">Monkey Island 2:</span><span class="textstyle11"> </span><span class="textstyle14">LeChuck's Revenge was known for its expressive pixel art backgrounds and character animations that supported humour and storytelling.</span><span class="textstyle11"><br/></span><span class="textstyle12">Myst</span><span class="textstyle14"> was known for its detailed pre-rendered environments that created a strong sense of atmosphere and mystery.</span><span class="textstyle15"><br/></span><span class="textstyle8"><br/></span><span class="textstyle8"><a href="https://retroquestgames.com/games/&#160;" target="_blank">Find out more about Adventure games!</a></span><span class="textstyle8"><br/><br/></span><span class="textstyle8"><br/><br/></span><span class="textstyle8"><br/></span></div>
+<div style="clear:both"></div></div></div></div></div></div><script>
+var elem_2f04d44a_button_open = function()
+{
+   this.classList.toggle("active");
+	
+   var contentElm = this.nextElementSibling;
+	
+  if (contentElm.style.maxHeight) 
+  {
+      contentElm.style.maxHeight = null;
+  }  
+  else 
+  {
+     contentElm.style.maxHeight = contentElm.scrollHeight + "px";
+	 	
+  }
+}
+var elm = document.getElementById("elem_2f04d44a_button");
+elm.addEventListener("click", elem_2f04d44a_button_open);</script>
+</div>
+<div style="clear:both"></div></div></div><div id="container_6532fa0e"><div id="container_6532fa0e_padding" ><div class="textstyle4"><div class="wsp_accordion" id="elem_4710ac38"  style="vertical-align: top; position:relative; display: inline-block; margin:1px 0px 1px 0px;width:100%; height:970px; background-color:#D7CAE4; background-color:#D7CAE4;  height: auto;" >
+<button class="wsp_accordionButton" id="elem_4710ac38_button" >
+Arcade classics:
+<span class="wsp_accordionButtonIndicator" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size:30pt" ></span>
+</button><div class="wsp_accordionContent" id="elem_4710ac38_content" >
+<div class="wsp_accordionContentPadding" id="elem_4710ac38_contentPadding" >
+<div id="text_6848ba0"><div id="text_6848ba0_padding" ><div class="textstyle5"><div id="gallery_28787caa">
+	<script type="text/javascript" src="images/wsp_gallery.js"></script>
+<div class="galleryimgcontainer" ><a href="javascript:wsp_gallery.openlayer('images/classic_game_image.jpg',736,736,true, 'gallery_28787caa');"><img src="images/rwb_3.jpg" id="gallery_28787caa_img1" width="736" height="736" /> </a></div></div></div>
+<div class="textstyle4"><span class="textstyle8"><br/><br/></span><span class="textstyle11">Classic arcade games were built to grab attention instantly, so their visuals were bold, colourful, and easy to read at a glance. Simple pixel graphics, high contrast colours, and repetitive but memorable designs made gameplay clear even during fast, chaotic moments. Characters and enemies were instantly recognisable, while visual effects like flashing sprites and score pop-ups added excitement.<br/><br/> These striking visuals helped arcade games feel intense, addictive, and perfect for short, high-energy play sessions.<br/><br/></span><span class="textstyle12">Pac-Man</span><span class="textstyle11"> </span><span class="textstyle14">was known for its bright maze design and instantly recognisable character shapes, making the gameplay easy to follow.</span><span class="textstyle11"><br/></span><span class="textstyle12">Space Invaders</span><span class="textstyle11"> </span><span class="textstyle14">was known for its simple but iconic alien sprites and repetitive formation patterns that made enemy movement clear and memorable.</span><span class="textstyle11"><br/></span><span class="textstyle12">Donkey Kong</span><span class="textstyle11"> </span><span class="textstyle14">was known for its colourful platform stages and expressive character animations that helped tell a simple story through gameplay.</span><span class="textstyle11"><br/></span><span class="textstyle12">Galaga</span><span class="textstyle11"> </span><span class="textstyle14">was known for its symmetrical enemy formations and bright visual effects that made fast shooting action easy to track.</span><span class="textstyle11"><br/></span><span class="textstyle12">Asteroids</span><span class="textstyle14"> was known for its distinctive vector graphics style, using simple glowing lines instead of pixel sprites to create a unique arcade look.<br/></span><span class="textstyle8"><br/></span><span class="textstyle8"><a href="https://www.retrogames.cz/adventury.php" target="_blank">Find out more about Classic games!</a></span><span class="textstyle8"><br/><br/><br/><br/><br/><br/></span></div>
+<div style="clear:both"></div></div></div></div></div></div><script>
+var elem_4710ac38_button_open = function()
+{
+   this.classList.toggle("active");
+	
+   var contentElm = this.nextElementSibling;
+	
+  if (contentElm.style.maxHeight) 
+  {
+      contentElm.style.maxHeight = null;
+  }  
+  else 
+  {
+     contentElm.style.maxHeight = contentElm.scrollHeight + "px";
+	 	
+  }
+}
+var elm = document.getElementById("elem_4710ac38_button");
+elm.addEventListener("click", elem_4710ac38_button_open);</script>
+</div>
+<div style="clear:both"></div></div></div></div>
+<div style="clear:both"></div></div></div></div>
+<div style="clear:both"></div></div></div>  </div>
+</body>
+</html>
